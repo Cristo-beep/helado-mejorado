@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioFrost | Nieves Naturales</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <!-- Botón de WhatsApp flotante -->
+  <a href="https://wa.me/5212331162768" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+  <header class="navbar">
+    <div class="container">
+      <img src="https://i.imgur.com/S2voK0J.jpeg" alt="Logo BioFrost" class="logo animate__animated animate__fadeIn">
+      <nav>
+        <ul>
+          <li><a href="#quienessomos" class="nav-link">¿Quiénes somos?</a></li>
+          <li><a href="#productos" class="nav-link">Nieves</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="verCarrito" class="carrito-boton animate__animated animate__pulse animate__infinite animate__slower">
+        <i class="fas fa-shopping-cart"></i> 
+        <span id="cantidadCarrito">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Hero -->
+    <section class="hero animate__animated animate__fadeIn">
+      <div class="hero-content">
+        <h1 class="animate__animated animate__fadeInUp">Nieves Artesanales Saludables</h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Disfruta sin preocupaciones con nuestros helados especializados</p>
+        <a href="#productos" class="btn-hero animate__animated animate__fadeInUp animate__delay-2s">Ver productos</a>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Sección ¿Quiénes somos? -->
+    <section id="quienessomos" class="productos-seccion">
+      <div class="titulo-seccion">
+        <h1 class="section-title animate__animated animate__fadeIn">¿Quiénes somos?</h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">En BioFrost, creemos que el placer de disfrutar un delicioso helado no debe estar limitado por condiciones médicas. Por eso, desarrollamos una línea de helados especialmente pensada para personas con diabetes y para quienes atraviesan procesos como la quimioterapia.</p>
+      </div>
+      <div class="grid-productos">
+        <div class="producto animate__animated animate__fadeInUp">
+          <div class="producto-img-container">
+            <img src="https://i.imgur.com/5zhSiJ5.jpeg" alt="Ingredientes Naturales" loading="lazy">
+          </div>
+          <h3>Propósito</h3>
+          <p>Creemos que la ciencia y la creatividad pueden mejorar la vida de las personas. Por eso, desarrollamos un helado que no solo es delicioso, sino también pensado para quienes necesitan opciones saludables.</p>
+        </div>
+        <div class="producto animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="producto-img-container">
+            <img src="https://i.imgur.com/NSWF8Di.jpeg" alt="Proceso Artesanal" loading="lazy">
+          </div>
+          <h3>Trabajo en equipo</h3>
+          <p>Cada decisión, desde los ingredientes hasta el diseño web, es fruto del esfuerzo colaborativo de estudiantes comprometidos con un cambio positivo.</p>
+        </div>
+        <div class="producto animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="producto-img-container">
+            <img src="https://i.imgur.com/OBQn0Qa.jpeg" alt="Compromiso con la calidad" loading="lazy">
+          </div>
+          <h3>Desde el TEC para el mundo</h3>
+          <p>Este proyecto nació en nuestras aulas, pero su impacto va más allá. Queremos que BioFrost ayude a quienes buscan alternativas alimenticias seguras y deliciosas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="productos-seccion">
+      <div class="titulo-seccion">
+        <h1 class="section-title animate__animated animate__fadeIn">Nieves BioFrost</h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">Disfruta nuestras Nieves artesanales</p>
+        <div class="filtros">
+          <button class="filtro-boton active" data-categoria="todos">Todos</button>
+          <button class="filtro-boton" data-categoria="diabetes">Para diabetes</button>
+          <button class="filtro-boton" data-categoria="oncologia">Para oncología</button>
+        </div>
+      </div>
+      <div class="grid-productos" id="gridProductos">
+        <!-- Productos cargados por JavaScript -->
+      </div>
+    </section>
+
+    <!-- Sección Beneficios -->
+    <section class="benefits-section">
+      <div class="container">
+        <h2 class="section-title animate__animated animate__fadeIn">Beneficios BioFrost</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card animate__animated animate__fadeInLeft">
+            <i class="fas fa-heart"></i>
+            <h3>Saludable</h3>
+            <p>Elaborados con ingredientes naturales y sin azúcares añadidos</p>
+          </div>
+          <div class="benefit-card animate__animated animate__fadeInLeft animate__delay-1s">
+            <i class="fas fa-leaf"></i>
+            <h3>Natural</h3>
+            <p>Sin conservantes ni colorantes artificiales</p>
+          </div>
+          <div class="benefit-card animate__animated animate__fadeInLeft animate__delay-2s">
+            <i class="fas fa-smile"></i>
+            <h3>Delicioso</h3>
+            <p>Sabores intensos y texturas cremosas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+      <h2 class="section-title animate__animated animate__fadeIn">Contáctanos</h2>
+      <form id="formularioContacto" class="animate__animated animate__fadeIn animate__delay-1s">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn-submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modal del carrito mejorado -->
+  <div id="modalCarrito" class="modal">
+    <div class="modal-contenido animate__animated animate__zoomIn">
+      <h3>Tu Carrito</h3>
+      <ul id="listaCarrito"></ul>
+      <p class="total">Total: $<span id="totalCarrito">0</span></p>
+      <button id="botonComprar" class="btn-comprar">Proceder al pago</button>
+      <button id="cerrarCarrito" class="btn-cerrar">Seguir comprando</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>BioFrost</h4>
+        <a href="#">Eventos Especiales</a>
+        <a href="#">Bolsa de Trabajo</a>
+      </div>
+      <div class="footer-column">
+        <h4>Invitados</h4>
+        <a href="#">Atención a Clientes</a>
+        <a href="https://wa.me/5215512345678" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+      <div class="footer-column">
+        <h4>Legales</h4>
+        <a href="#">Aviso de Privacidad</a>
+        <a href="#">Términos y Condiciones</a>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1CZ2gagthv/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/biofrost2025?igsh=YXdqajFjYWQ5anZq" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 BioFrost. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>
